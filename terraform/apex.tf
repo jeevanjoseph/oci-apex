@@ -7,6 +7,7 @@ resource "oci_database_autonomous_database" "apex_instance" {
   admin_password           = var.autonomous_database_admin_password
 
   db_workload = "APEX"
+  is_free_tier = true
 
 }
 
